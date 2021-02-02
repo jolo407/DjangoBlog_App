@@ -1,4 +1,5 @@
 body {
+    background-color: tan;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
 }
@@ -10,8 +11,9 @@ header {
 }
 
 header h1 a {
-    color: red;
+    color:teal;
     text-decoration: none;
+    margin: 15px;
 }
 
 .nav-left {
@@ -20,28 +22,54 @@ header h1 a {
 
 .nav-right {
     display: flex;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 
+.nav-right p{
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.nav-right, .btn {
+    margin-bottom: 2px;
+}
+
+
 .post-entry {
+    padding-bottom: 2rem;
     margin-bottom: 2rem;
+    margin: 15px;
 }
 
 .post-entry h2 {
+    color: teal;
     margin: 0.5rem 0; 
 }
 
 .post-entry h2 a, .post-entry h2 a:visited {
-    color: blue;
+    color: teal;
     text-decoration: none;
 }
 
-.post-entry p {
-    margin: 0;
+.post-entry blockquote {
+    border-left: 4px solid black;
+    color: rgb(73, 70, 218);
+    margin: 30px 0 30px 15px;
+    padding-left: 15px;
     font-weight: 400;
 }
 
+.post-entry p, .btn{
+    margin: 10px;
+    padding: 5px;
+}
+
 .post-entry h2 a:hover {
-    color: red;
+    color: yellowgreen;
+}
+
+.form-group {
+    text-align: center;
+    
 }
 

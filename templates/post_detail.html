@@ -2,11 +2,14 @@
 
 {% block content %}
     <div class="post-entry">
+        <blockquote class="blockquote">
         <h2>{{ post.title }}</h2>
         <p>{{ post.body }}</p>
-        </div>
-        <p><a href="{% url 'post_edit' post.pk %}">+ Edit Blog Post</a></p>
-        <p><a href="{% url 'post_delete' post.pk %}">- Delete Blog Post</a></p>
-    
+        <footer class="blockquote-footer">From @{{ user.username }}</footer>
+        </blockquote>
+    </div>
+        <p><a class="btn btn-sm btn-primary" href="{% url 'post_edit' post.pk %}"> Edit Blog Post</a></p>
+        <p><a class="btn btn-sm btn-primary" href="{% url 'post_delete' post.pk %}">Delete Blog Post</a></p>
+        
 
 {% endblock content %}
