@@ -5,7 +5,7 @@
         <blockquote class="blockquote">
         <h2>{{ post.title }}</h2>
         <p>{{ post.body }}</p>
-        <footer class="blockquote-footer">From @{{ user.username }}</footer>
+        <footer class="blockquote-footer">From @{{ author }}</footer>
         </blockquote>
     </div>
         <p><a class="btn btn-sm btn-primary" href="{% url 'post_edit' post.pk %}"> Edit Blog Post</a></p>
